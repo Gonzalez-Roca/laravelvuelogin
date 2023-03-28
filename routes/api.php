@@ -23,3 +23,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return User::all();
 // });
 
+use App\Http\Controllers\BlogController;
+Route::resource('blogs', BlogController::class);
+
+// Route::get('/blogs', 'BlogController@index');
+// Route::post('/nombretabla', 'BlogController@store');
+// Route::get('/nombretabla/{id}', 'BlogController@show');
+// Route::put('/nombretabla/{id}', 'BlogController@update');
+// Route::delete('/nombretabla/{id}', 'BlogController');
+
+
